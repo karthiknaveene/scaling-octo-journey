@@ -1,4 +1,4 @@
-name: Test My Go Action
+name: Test results - main
 
 permissions:
   id-token: write
