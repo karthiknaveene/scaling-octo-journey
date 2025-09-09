@@ -55,8 +55,11 @@ jobs:
       - name: Publish evidence
         uses: cloudbees-io-gha/publish-evidence-item@v2
         with:
-          cloudbees-url: "https://api.saas-qa.beescloud.com/"
-          content: "Qa validation for gha-actions on 8/9"
+          content: |-
+            # Sample Markdown evidence output
+            - Application endpoint: https://app.example.com/qa
+            - Artifacts
+              - [backend.jar](https://example.com/repo/app/v1.0/backend.jar)
 
       
       - name: Use runUrl output
