@@ -13,7 +13,7 @@ pipeline {
                 stage('Package') {
                     steps {
                         echo 'Packaging...'
-                        sleep 2
+                        sleep 3
                     }
                 }
             }
