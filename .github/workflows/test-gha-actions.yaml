@@ -20,10 +20,10 @@ jobs:
         uses: cloudbees-io-gha/run-cloudbees-workflow@v1
         id: run-workflow
         with:
-          cloudbees-url:  "https://api.saas-qa.beescloud.com/"
+          #cloudbees-url:  "https://api.saas-qa.beescloud.com/"
           workflow-file-name: "workflow.yaml"
           workflow-inputs: '{"workflowinput1": "test1"}'
-          cloudbees-pat: ${{ secrets.QA_PAT }}
+          cloudbees-pat: ${{ secrets.PROD_PAT }}
           
 
 
