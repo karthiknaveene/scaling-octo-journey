@@ -1,0 +1,11 @@
+[
+  {
+    "component_id": "712497ad-8d5e-402f-b5f0-8ba246b01729",
+    "branch_name": "workflow-dispatch",
+    "workflow_file_name": "workflow-dispatch",
+    "inputs": {
+      "workflowinput1": "test"
+    },
+    "ignore_failures": true
+  }
+]
