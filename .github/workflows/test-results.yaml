@@ -30,7 +30,7 @@ jobs:
         with:
           test-type: JUNIT
           results-path: target/surefire-reports/*
-          cloudbees-url:  "https://api.saas-qa.beescloud.com/"
+          #cloudbees-url:  "https://api.saas-qa.beescloud.com/"
       
 
 
