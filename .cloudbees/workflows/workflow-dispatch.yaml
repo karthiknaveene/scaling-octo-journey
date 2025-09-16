@@ -17,6 +17,6 @@ jobs:
         # uses: ./
         with:
           workflows-dispatch-file: dispatch_request.json
-          token: ${{ secrets.WORKFLOW_TRIGGER_TEST_PAT }}
+          token: "cb_api_dqRJZVVH59NdV4iRvcNW90gxotdEWvkHd2iNUaADxtswax9EatKWzw8sKx1agfAT0ei1iVug5ihum7Vy3ocgPQ=="
           wait-for-completion: false
 
