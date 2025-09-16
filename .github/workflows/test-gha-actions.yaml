@@ -11,6 +11,7 @@ on:
       - test-ak
 jobs:
   run-go-action:
+    name: run-go-action-akki
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
