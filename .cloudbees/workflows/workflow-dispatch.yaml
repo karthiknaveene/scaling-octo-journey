@@ -1,0 +1,22 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: Dispatch multiple workflows
+on:
+  push:
+    branches:
+      - 'workflow-dispatch'
+
+jobs:
+  dispatch-workflows:
+    steps:
+      - name: checkout-source-code
+        uses: cloudbees-io/checkout@v1
+  
+      - name: Dispatch workflows
+        uses: cloudbees-io/workflows-dispatch@main
+        # uses: ./
+        with:
+          workflows-dispatch-file: dispatch_request.json
+          token: ${{ secrets.WORKFLOW_TRIGGER_TEST_PAT }}
+          wait-for-completion: false
+
