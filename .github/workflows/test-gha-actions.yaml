@@ -24,8 +24,7 @@ jobs:
           workflow-file-name: "workflow.yaml"
           workflow-inputs: '{"workflowinput1": "test1"}'
           cloudbees-pat: ${{ secrets.QA_PAT }}
-
-
+          
       - name: Checkout Repository - v1
         uses: actions/checkout@v3
         with:
