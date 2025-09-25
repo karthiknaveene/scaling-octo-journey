@@ -21,5 +21,4 @@ jobs:
           version: 2.0.0
           url: docker.io/App13/App13-Backend:2.0.0
           type: "docker"
-          
           cloudbees-url: "https://api.saas-qa.beescloud.com"
