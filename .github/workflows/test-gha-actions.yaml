@@ -60,8 +60,6 @@ jobs:
             - Artifacts
               - [backend.jar](https://example.com/repo/app/v1.0/backend.jar)
               
-
-    
       - name: Use runUrl output
         run: echo "The CloudBees run URL is ${{ steps.go-action.outputs.cbp_run_url}}"
 
