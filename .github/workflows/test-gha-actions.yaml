@@ -20,10 +20,10 @@ jobs:
         uses: cloudbees-io-gha/run-cloudbees-workflow@v1
         id: run-workflow
         with:
-          cloudbees-url:  "https://api.saas-qa.beescloud.com/"
+          #cloudbees-url:  "https://api.saas-qa.beescloud.com/"
           workflow-file-name: "workflow.yaml"
           workflow-inputs: '{"workflowinput1": "test1"}'
-          cloudbees-pat: ${{ secrets.QA_PAT }}
+          cloudbees-pat: ${{ secrets.PROD_PAT }}
           
       - name: Checkout Repository - v1
         uses: actions/checkout@v3
@@ -39,7 +39,7 @@ jobs:
         with:
           test-type: JUNIT
           results-path: target/surefire-reports/*
-          cloudbees-url:  "https://api.saas-qa.beescloud.com/"
+          # cloudbees-url:  "https://api.saas-qa.beescloud.com/"
 
       - name: Register Build Artifacts in Cloudbees Platform
         uses: cloudbees-io-gha/register-build-artifact@v3.0.2
@@ -49,7 +49,7 @@ jobs:
           version: 2.0.0
           url: docker.io/App13/App13-Backend:2.0.0
           type: "docker"
-          cloudbees-url: "https://api.saas-qa.beescloud.com/"
+          # cloudbees-url: "https://api.saas-qa.beescloud.com/"
 
       - name: Publish evidence
         uses: cloudbees-io-gha/publish-evidence-item@v2
