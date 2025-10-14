@@ -1,10 +1,9 @@
 name: Build Artifact
 
-# on: [push, pull_request]
 on:
-  push:
-    branches:
-      - "main"
+  pull_request:
+    types: [opened, reopened]
+
 
 
 jobs:
